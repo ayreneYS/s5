@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Survey Form</title>
+    <style>
+        body {
+            background-image: url(/images/cat\ background.jpeg)
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title" class="title">Cat Survey Form</h1>
+    <p id="description">Thank you for taking the time. We appreciate hearing from you and your cat preferences</p>
+    <fieldset>
+    <form id="survey-form"> 
+       <fieldset>
+        <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Enter your name" required></label>
+        <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="Enter your email" required></label>
+        <label id="number-label" for="number-label">Number: <input id="number" type="number" min="999999" max="99999999999" placeholder="Enter your number"></label>
+       </fieldset>
+       <fieldset>
+        <label for="pet-cat">Do you have a pet cat?
+            <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+        </select>
+        </label>
+        <label for="no-pet-cat">If no, do you want to have a pet cat in the future?</label>
+        <label for="definitely">
+            <input id="definitely" type="radio" value="a" name="answer" class="inline" /> Definitely</label>
+        </label>
+        <label for="maybe">
+            <input id="maybe" type="radio" value="b" name="answer" class="inline" /> Maybe</label>
+        <label for="no">
+            <input id="no" type="radio" value="c" name="answer" class="inline" /> No. I have allergies</label>
+        </label>
+       </fieldset>
+       <fieldset>
+        <label for="cat-breed">What cat breeds do you have or want to have?(check all that apply)</label>
+        <label for="ragdoll" name="breed">  
+            <input id="ragdoll" type="checkbox" name="breed" class="inline" value="i" /> Ragdoll</label>
+        <label for="exotic-shorthair" name="breed">  
+            <input id="exotic-shorthair" type="checkbox" name="breed" class="inline" value="ii" /> Exotic Shorthair</label>
+        <label for="british-shorthair" name="breed">  
+            <input id="british-shorthair" type="checkbox" name="breed" class="inline" value="iii" /> British Shorthair</label>   
+        <label for="persian" name="breed">  
+            <input id="persian" type="checkbox" name="breed" class="inline" value="iv" /> Persian</label>
+        <label for="maine-coon" name="breed">  
+            <input id="maine-coon" type="checkbox" name="breed" class="inline" value="v" /> Maine Coon</label>
+        <label for="american-shorthair" name="breed">  
+            <input id="american-shorthair" type="checkbox" name="breed" class="inline" value="vi" /> American Shorthair</label>
+        <label for="devon-rex" name="breed">  
+            <input id="devon-rex" type="checkbox" name="breed" class="inline" value="vii" /> Devon Rex</label>
+        <label for="sphynx" name="breed">  
+            <input id="sphynx" type="checkbox" name="breed" class="inline" value="viii" /> Sphynx</label>
+        <label for="scottish-fold" name="breed">  
+            <input id="scottish-fold" type="checkbox" name="breed" class="inline" value="ix" /> Scottish Fold</label>
+        <label for="siamese" name="breed">  
+            <input id="siamese" type="checkbox" name="breed" class="inline" value="x" /> Siamese</label>
+        <label for="others" name="breed">  
+            <input id="others" type="checkbox" name="breed" class="inline" value="xi" /> Others:</label>
+        <label id="others-label" for="others"> <input id="name" type="text" placeholder="Enter here" ></label>
+       </fieldset>
+       <fieldset>
+        <label for="bio">Any comments or suggestions?
+            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+          </label>
+    </fieldset>
+    <input type="submit" value="Submit" />
+</fieldset>
+    </form>
+</body>
+</html>
